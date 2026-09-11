@@ -1,0 +1,56 @@
+:root {
+  --bg: oklch(98% 0.010 160);
+  --surface: oklch(99% 0.005 160);
+  --surface-2: oklch(93% 0.018 160);
+  --border: oklch(90% 0.018 160);
+  --border-strong: oklch(78% 0.018 155);
+  --input-border: oklch(83% 0.018 155);
+  --text: oklch(18% 0.018 160);
+  --text-muted: oklch(42% 0.018 160);
+  --text-muted-2: oklch(38% 0.018 160);
+  --text-faint: oklch(48% 0.015 155);
+  --accent: oklch(32% 0.14 155);
+  --accent-hover: oklch(25% 0.14 155);
+  --lowstock-bg: oklch(95% 0.04 155);
+  --selection: oklch(85% 0.06 155);
+
+  font-family: 'Manrope', sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+::selection {
+  background: var(--selection);
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
